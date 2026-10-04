@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-sand text-ink font-sans antialiased; }
+  ::selection { background: #C9A24B; color: #0B1220; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; }
+  .eyebrow { @apply text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-600; }
+  .gold-text { @apply bg-gradient-to-r from-gold-300 via-gold to-gold-600 bg-clip-text text-transparent; }
+}
